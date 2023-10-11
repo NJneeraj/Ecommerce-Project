@@ -3,8 +3,38 @@ const db = require("../models");
 const Product = db.Product;
 
 const getAll = async (req, res) => {
-    const products = await Product.findAll({});
-    res.status(200).json(products);
+    const { search, minPrice, maxPrice, sortBy, sortOrder, page = 1, pageSize = 10 } = req.query;
+
+    const conditions = {};
+    if (search) {
+        conditions.name = { [db.Sequelize.Op.iLike]: `%${search}%` };
+    }
+    if (minPrice) {
+        conditions.price = { [db.Sequelize.Op.gte]: minPrice };
+    }
+    if (maxPrice) {
+        conditions.price = {
+            ...conditions.price,
+            [db.Sequelize.Op.lte]: maxPrice
+        };
+    }
+    const order = sortBy && sortOrder ? [[sortBy, sortOrder]] : [['createdAt', 'DESC']];
+    const offset = (page - 1) * pageSize;
+
+    const products = await Product.findAndCountAll({
+        where: conditions,
+        order,
+        limit: parseInt(pageSize),
+        offset: offset
+    });
+
+    res.status(200).json({
+        totalItems: products.count,
+        totalPages: Math.ceil(products.count / pageSize),
+        currentPage: page,
+        pageSize: parseInt(pageSize),
+        products: products
+    })
 }
 const getWithId = async (req, res) => {
     const { id } = req.params;
