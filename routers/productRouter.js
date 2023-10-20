@@ -1,14 +1,19 @@
 const express = require("express");
 const { wrapAsync } = require("../helper/catchAsync");
-const { getAll, getWithId, addProduct, updateProduct, deleteProduct } = require("../controllers/productController");
+const {
+  getAll,
+  getWithId,
+  addProduct,
+  updateProduct,
+  deleteProduct,
+} = require("../controllers/productController");
 const { validateProduct } = require("../middlewares/validateProduct");
-const productRouter = express.Router();
+const router = express.Router();
 
+router.get("/", wrapAsync(getAll));
+router.get("/:id", wrapAsync(getWithId));
+router.post("/", validateProduct, wrapAsync(addProduct));
+router.put("/:id", validateProduct, wrapAsync(updateProduct));
+router.delete("/:id", wrapAsync(deleteProduct));
 
-productRouter.get("/", wrapAsync(getAll));
-productRouter.get("/:id", wrapAsync(getWithId));
-productRouter.post("/", validateProduct, wrapAsync(addProduct));
-productRouter.put("/:id", validateProduct, wrapAsync(updateProduct))
-productRouter.delete("/:id", wrapAsync(deleteProduct));
-
-module.exports = { productRouter };
+module.exports.productRouter = router;
