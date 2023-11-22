@@ -3,8 +3,23 @@ const db = require("../models");
 const Category = db.Category;
 
 const getAllCategories = async (req, res) => {
-  const categories = await Category.findAll({});
+  const categories = await Category.findAll({
+    include: {
+      model: db.Product,
+    },
+  });
   res.status(200).json({ categories });
+};
+const getCategory = async (req, res) => {
+  const { id } = req.params;
+  const category = await Category.findByPk(id, {
+    include: {
+      model: db.Product,
+      as: "products",
+    },
+  });
+  let products = category.products;
+  res.render("home", { products, categories: [] });
 };
 const addCategory = async (req, res) => {
   const { name } = req.body;
@@ -12,4 +27,4 @@ const addCategory = async (req, res) => {
   res.status(200).json({ cateory });
 };
 
-module.exports = { getAllCategories, addCategory };
+module.exports = { getAllCategories, addCategory, getCategory };

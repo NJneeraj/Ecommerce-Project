@@ -1,182 +1,182 @@
 [
-    {
-        "name": "Samsung 4K QLED Smart TV",
-        "description": "A high-quality 4K QLED TV for an immersive entertainment experience.",
-        "price": 799.99,
-        "quantity": 10,
-        "image": "samsung4ktv.jpg",
-        "user_id": 1,
-        "category_id": 1
-    },
-    {
-        "name": "Adidas Ultraboost Running Shoes",
-        "description": "Top-rated running shoes for ultimate comfort and performance.",
-        "price": 139.99,
-        "quantity": 15,
-        "image": "adidasultraboost.jpg",
-        "user_id": 1,
-        "category_id": 2
-    },
-    {
-        "name": "Spalding NBA Basketball",
-        "description": "Official NBA basketball for basketball enthusiasts.",
-        "price": 29.99,
-        "quantity": 20,
-        "image": "nba basketball.jpg",
-        "user_id": 1,
-        "category_id": 3
-    },
-    {
-        "name": "Educated by Tara Westover",
-        "description": "A memoir about a woman who grows up in a strict and abusive household and ultimately escapes to learn about the world.",
-        "price": 15.99,
-        "quantity": 30,
-        "image": "educated.jpg",
-        "user_id": 1,
-        "category_id": 4
-    },
-    {
-        "name": "LEGO Technic Bugatti Chiron",
-        "description": "A highly detailed and realistic LEGO Technic model of the Bugatti Chiron supercar.",
-        "price": 349.99,
-        "quantity": 8,
-        "image": "legobugatti.jpg",
-        "user_id": 1,
-        "category_id": 5
-    },
-    {
-        "name": "Xbox Series X Gaming Console",
-        "description": "The latest Xbox gaming console for a next-level gaming experience.",
-        "price": 549.99,
-        "quantity": 12,
-        "image": "xboxseriesx.jpg",
-        "user_id": 1,
-        "category_id": 6
-    },
-    {
-        "name": "Organic Baby Spinach",
-        "description": "Fresh organic baby spinach for salads and healthy dishes.",
-        "price": 3.99,
-        "quantity": 40,
-        "image": "organicspinach.jpg",
-        "user_id": 1,
-        "category_id": 7
-    },
-    {
-        "name": "Estée Lauder Double Wear Foundation",
-        "description": "A long-lasting foundation that provides a flawless and matte finish.",
-        "price": 39.99,
-        "quantity": 18,
-        "image": "esteelauderfoundation.jpg",
-        "user_id": 1,
-        "category_id": 8
-    },
-    {
-        "name": "Instant Pot Duo 6-Quart Pressure Cooker",
-        "description": "A versatile kitchen appliance for fast and easy cooking.",
-        "price": 79.99,
-        "quantity": 22,
-        "image": "instantpot.jpg",
-        "user_id": 1,
-        "category_id": 9
-    },
-    {
-        "name": "Samsonite Winfield 3 Hardside Luggage",
-        "description": "Durable and stylish hardside luggage for travel enthusiasts.",
-        "price": 99.99,
-        "quantity": 8,
-        "image": "samsoniteluggage.jpg",
-        "user_id": 1,
-        "category_id": 10
-    },
-    {
-        "name": "Sony Noise-Canceling Headphones",
-        "description": "Premium headphones with industry-leading noise-canceling technology.",
-        "price": 249.99,
-        "quantity": 10,
-        "image": "sonyheadphones.jpg",
-        "user_id": 1,
-        "category_id": 1
-    },
-    {
-        "name": "Levi's 501 Original Fit Jeans",
-        "description": "Classic and timeless jeans that fit comfortably and stylishly.",
-        "price": 59.99,
-        "quantity": 15,
-        "image": "levisjeans.jpg",
-        "user_id": 1,
-        "category_id": 2
-    },
-    {
-        "name": "Wilson Pro Staff Tennis Racket",
-        "description": "A high-performance tennis racket designed for advanced players.",
-        "price": 149.99,
-        "quantity": 15,
-        "image": "wilsonprostaff.jpg",
-        "user_id": 1,
-        "category_id": 3
-    },
-    {
-        "name": "To Kill a Mockingbird by Harper Lee",
-        "description": "A classic novel that addresses issues of race and injustice in the American South.",
-        "price": 14.99,
-        "quantity": 35,
-        "image": "tokillamockingbird.jpg",
-        "user_id": 1,
-        "category_id": 4
-    },
-    {
-        "name": "LEGO Star Wars Millennium Falcon",
-        "description": "Build the iconic Millennium Falcon from Star Wars with LEGO bricks.",
-        "price": 159.99,
-        "quantity": 25,
-        "image": "legomillenniumfalcon.jpg",
-        "user_id": 1,
-        "category_id": 5
-    },
-    {
-        "name": "PlayStation 5 DualSense Wireless Controller",
-        "description": "Wireless controller with haptic feedback for the PlayStation 5.",
-        "price": 59.99,
-        "quantity": 20,
-        "image": "ps5controller.jpg",
-        "user_id": 1,
-        "category_id": 6
-    },
-    {
-        "name": "Organic Apples",
-        "description": "Fresh and organic apples for a healthy snack.",
-        "price": 2.99,
-        "quantity": 50,
-        "image": "organicapples.jpg",
-        "user_id": 1,
-        "category_id": 7
-    },
-    {
-        "name": "Maybelline Lash Sensational Mascara",
-        "description": "A mascara that adds volume and length to your lashes.",
-        "price": 7.99,
-        "quantity": 30,
-        "image": "maybellinemascara.jpg",
-        "user_id": 1,
-        "category_id": 8
-    },
-    {
-        "name": "Cuisinart 12-Cup Coffee Maker",
-        "description": "A coffee maker that brews delicious coffee for your mornings.",
-        "price": 69.99,
-        "quantity": 12,
-        "image": "cuisinartcoffeemaker.jpg",
-        "user_id": 1,
-        "category_id": 9
-    },
-    {
-        "name": "Travelpro Platinum Elite Expandable Spinner Wheel Luggage",
-        "description": "High-quality spinner wheel luggage for frequent travelers.",
-        "price": 199.99,
-        "quantity": 6,
-        "image": "travelproluggage.jpg",
-        "user_id": 1,
-        "category_id": 10
-    }
+  {
+    "name": "Samsung 4K QLED Smart TV",
+    "description": "A high-quality 4K QLED TV for an immersive entertainment experience.",
+    "price": 799.99,
+    "quantity": 10,
+    "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/90c5e71b-60c4-43e5-a239-121402b2b51c23260541_416x416.jpg",
+    "seller": "samsung",
+    "category_id": 1
+  },
+  {
+    "name": "Adidas Ultraboost Running Shoes",
+    "description": "Top-rated running shoes for ultimate comfort and performance.",
+    "price": 139.99,
+    "quantity": 15,
+    "image": "https://assets.adidas.com/images/w_600,f_auto,q_auto/bce4c93377ad4aea9fa3b30f822bf235_9366/Ultrabounce_Shoes_Blue_ID2247_01_standard.jpg",
+    "seller": "samsung",
+    "category_id": 2
+  },
+  {
+    "name": "Spalding NBA Basketball",
+    "description": "Official NBA basketball for basketball enthusiasts.",
+    "price": 29.99,
+    "quantity": 20,
+    "image": "https://media.istockphoto.com/id/170096587/photo/basketball.jpg?s=612x612&w=0&k=20&c=It1xaV5jYkoCOAlxaOwdmTbPHeIcXUZWECaPzriwh1w=",
+    "seller": "samsung",
+    "category_id": 3
+  },
+  {
+    "name": "Educated by Tara Westover",
+    "description": "A memoir about a woman who grows up in a strict and abusive household and ultimately escapes to learn about the world.",
+    "price": 15.99,
+    "quantity": 30,
+    "image": "https://bookbins.in/wp-content/uploads/2022/03/Educated-Tara-Westover-Buy-Online-Bookbins-Hardcover-1.png",
+    "seller": "samsung",
+    "category_id": 4
+  },
+  {
+    "name": "LEGO Technic Bugatti Chiron",
+    "description": "A highly detailed and realistic LEGO Technic model of the Bugatti Chiron supercar.",
+    "price": 349.99,
+    "quantity": 8,
+    "image": "https://www.lego.com/cdn/cs/set/assets/bltd13aa93d1b640045/42083.jpg?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+    "seller": "Lego",
+    "category_id": 5
+  },
+  {
+    "name": "Xbox Series X Gaming Console",
+    "description": "The latest Xbox gaming console for a next-level gaming experience.",
+    "price": 549.99,
+    "quantity": 12,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1XlF-cnu8aYPyjMzCZ5aBYSweEVlE-bNVzPdNumi0hc9w3e0mDzPTkzJ_FOFELCLL2bY&usqp=CAU",
+    "seller": "Microsoft",
+    "category_id": 6
+  },
+  {
+    "name": "Organic Baby Spinach",
+    "description": "Fresh organic baby spinach for salads and healthy dishes.",
+    "price": 3.99,
+    "quantity": 40,
+    "image": "https://thealtitudestore.com/cdn/shop/products/Baby_Spinach_900x.jpg?v=1526969372",
+    "seller": "samsung",
+    "category_id": 7
+  },
+  {
+    "name": "Estée Lauder Double Wear Foundation",
+    "description": "A long-lasting foundation that provides a flawless and matte finish.",
+    "price": 39.99,
+    "quantity": 18,
+    "image": "https://m.media-amazon.com/images/I/71dMCrSzOfL.jpg",
+    "seller": "samsung",
+    "category_id": 8
+  },
+  {
+    "name": "Instant Pot Duo 6-Quart Pressure Cooker",
+    "description": "A versatile kitchen appliance for fast and easy cooking.",
+    "price": 79.99,
+    "quantity": 22,
+    "image": "https://i5.walmartimages.ca/images/Enlarge/539/802/6000202539802.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+    "seller": "samsung",
+    "category_id": 9
+  },
+  {
+    "name": "Samsonite Winfield 3 Hardside Luggage",
+    "description": "Durable and stylish hardside luggage for travel enthusiasts.",
+    "price": 99.99,
+    "quantity": 8,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPSa6xrQIU5ksBPx7bHyZ3XdpnlzTw6EH9O386Kog7h6wpyOpqsc32VwOaO28_nTiaeBI&usqp=CAU",
+    "seller": "samsung",
+    "category_id": 10
+  },
+  {
+    "name": "Sony Noise-Canceling Headphones",
+    "description": "Premium headphones with industry-leading noise-canceling technology.",
+    "price": 249.99,
+    "quantity": 10,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2RixsxXP9wvGONFQ5CuQZLQT0OAiny-gNRatVPTNKArL9vKEs4xOkr0WKZU0pSK0lcw&usqp=CAU",
+    "seller": "Sony",
+    "category_id": 1
+  },
+  {
+    "name": "Levi's 501 Original Fit Jeans",
+    "description": "Classic and timeless jeans that fit comfortably and stylishly.",
+    "price": 59.99,
+    "quantity": 15,
+    "image": "levisjeans.jpg",
+    "seller": "samsung",
+    "category_id": 2
+  },
+  {
+    "name": "Wilson Pro Staff Tennis Racket",
+    "description": "A high-performance tennis racket designed for advanced players.",
+    "price": 149.99,
+    "quantity": 15,
+    "image": "wilsonprostaff.jpg",
+    "seller": "samsung",
+    "category_id": 3
+  },
+  {
+    "name": "To Kill a Mockingbird by Harper Lee",
+    "description": "A classic novel that addresses issues of race and injustice in the American South.",
+    "price": 14.99,
+    "quantity": 35,
+    "image": "tokillamockingbird.jpg",
+    "seller": "samsung",
+    "category_id": 4
+  },
+  {
+    "name": "LEGO Star Wars Millennium Falcon",
+    "description": "Build the iconic Millennium Falcon from Star Wars with LEGO bricks.",
+    "price": 159.99,
+    "quantity": 25,
+    "image": "legomillenniumfalcon.jpg",
+    "seller": "samsung",
+    "category_id": 5
+  },
+  {
+    "name": "PlayStation 5 DualSense Wireless Controller",
+    "description": "Wireless controller with haptic feedback for the PlayStation 5.",
+    "price": 59.99,
+    "quantity": 20,
+    "image": "ps5controller.jpg",
+    "seller": "samsung",
+    "category_id": 6
+  },
+  {
+    "name": "Organic Apples",
+    "description": "Fresh and organic apples for a healthy snack.",
+    "price": 2.99,
+    "quantity": 50,
+    "image": "organicapples.jpg",
+    "seller": "samsung",
+    "category_id": 7
+  },
+  {
+    "name": "Maybelline Lash Sensational Mascara",
+    "description": "A mascara that adds volume and length to your lashes.",
+    "price": 7.99,
+    "quantity": 30,
+    "image": "maybellinemascara.jpg",
+    "seller": "samsung",
+    "category_id": 8
+  },
+  {
+    "name": "Cuisinart 12-Cup Coffee Maker",
+    "description": "A coffee maker that brews delicious coffee for your mornings.",
+    "price": 69.99,
+    "quantity": 12,
+    "image": "cuisinartcoffeemaker.jpg",
+    "seller": "samsung",
+    "category_id": 9
+  },
+  {
+    "name": "Travelpro Platinum Elite Expandable Spinner Wheel Luggage",
+    "description": "High-quality spinner wheel luggage for frequent travelers.",
+    "price": 199.99,
+    "quantity": 6,
+    "image": "travelproluggage.jpg",
+    "seller": "samsung",
+    "category_id": 10
+  }
 ]

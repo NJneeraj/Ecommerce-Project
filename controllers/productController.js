@@ -30,20 +30,9 @@ const getAll = async (req, res) => {
     sortBy && sortOrder ? [[sortBy, sortOrder]] : [["createdAt", "DESC"]];
   const offset = (page - 1) * pageSize;
 
-  const products = await Product.findAndCountAll({
-    where: conditions,
-    order,
-    limit: parseInt(pageSize),
-    offset: offset,
-  });
-
-  res.status(200).json({
-    totalItems: products.count,
-    totalPages: Math.ceil(products.count / pageSize),
-    currentPage: page,
-    pageSize: parseInt(pageSize),
-    products: products,
-  });
+  const products = await Product.findAll();
+  const categories = await db.Category.findAll();
+  res.render("home", { products, categories });
 };
 const getWithId = async (req, res) => {
   const { id } = req.params;
@@ -51,11 +40,16 @@ const getWithId = async (req, res) => {
     where: {
       id: id,
     },
+    include: {
+      model: db.Review,
+      as: "reviews",
+    },
   });
   if (!product) {
     throw new CustomError("No product with the id", 404);
   }
-  res.status(200).json(product);
+  // res.json(product);
+  res.render("products/detail", { product });
 };
 const addProduct = async (req, res) => {
   const productData = req.body;

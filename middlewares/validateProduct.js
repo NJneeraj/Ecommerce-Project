@@ -6,7 +6,7 @@ const productSchema = Joi.object({
   price: Joi.number().required().min(1),
   quantity: Joi.number().min(1).required(),
   image: Joi.string().required(),
-  user_id: Joi.number().required(),
+  seller: Joi.string().required(),
   category_id: Joi.number().required(),
 });
 module.exports.validateProduct = (req, res, next) => {

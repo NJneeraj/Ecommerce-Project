@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  font-size: 14px;
+  font-weight: 700;
+}
+.superNav {
+  font-size: 13px;
+}
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+img {
+  object-fit: cover;
+}
+@media screen and (max-width: 540px) {
+  .centerOnMobile {
+    text-align: center;
+  }
+}
+
+.bg-purple {
+  background-color: #ba68c8;
+  &:hover {
+    opacity: 0.9;
+    a {
+      font-size: 1.1em;
+    }
+  }
+}
+.bg-red {
+  background-color: #f44336;
+}
+.bg-pink {
+  background-color: #ec407a;
+}
