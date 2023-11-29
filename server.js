@@ -7,15 +7,11 @@ const { userRouter } = require("./routers/userRouter");
 const { cartRouter } = require("./routers/cartRouter");
 const app = express();
 const bodyParser = require("body-parser");
-const path = require("path");
 
 const port = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
-app.use(express.static(__dirname + "/public"));
 app.use("/api/products", productRouter);
 app.use("/api/auth", userRouter);
 app.use("/api/category", categoryRouter);

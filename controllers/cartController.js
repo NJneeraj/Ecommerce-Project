@@ -8,7 +8,6 @@ const getCart = async (req, res) => {
 };
 const getCartItems = async (req, res) => {
   const { id } = req.params;
-  console.log(id, "???????????????????????");
   const cartData = await Cart.findOne({
     where: { user_id: id },
   });
@@ -22,7 +21,7 @@ const getCartItems = async (req, res) => {
     msg: "success",
     data: products,
   };
-  res.render("cart/index", { products });
+  res.status(200).json(resp);
 };
 
 const addToCart = async (req, res) => {
@@ -37,7 +36,7 @@ const addToCart = async (req, res) => {
     msg: "success",
     data: cart,
   };
-  res.redirect(`/api/cart/${userId}`);
+  res.status(200).json(resp);
 };
 
 const removeFromCart = async (req, res) => {
@@ -52,7 +51,7 @@ const removeFromCart = async (req, res) => {
     msg: "success",
     data: itm,
   };
-  res.redirect(`/api/cart/${id}`);
+  res.status(200).json(resp);
 };
 
 module.exports = { addToCart, getCart, getCartItems, removeFromCart };

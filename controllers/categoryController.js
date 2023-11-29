@@ -19,7 +19,7 @@ const getCategory = async (req, res) => {
     },
   });
   let products = category.products;
-  res.render("home", { products, categories: [] });
+  res.status(200).json({ msg: "ok", data: products });
 };
 const addCategory = async (req, res) => {
   const { name } = req.body;

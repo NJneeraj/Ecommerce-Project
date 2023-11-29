@@ -8,20 +8,21 @@ const addReview = async (req, res) => {
     rating,
     productId,
   };
-  await db.Review.create(data);
-  res.redirect("/api/products");
+  const review = await db.Review.create(data);
+  const resp = { msg: "ok", data: review };
+  res.status(200).json(resp);
 };
 
 const deleteReview = async (req, res) => {
   const { id, productId } = req.params;
-  const review = await db.Review.find({
+  const review = await db.Review.findOne({
     where: {
       id: id,
       productId: productId,
     },
   });
   await review.destroy();
-  res.redirect("/api/products");
+  res.status(200).json({ msg: "ok", data: review });
 };
 
 module.exports = { addReview, deleteReview };

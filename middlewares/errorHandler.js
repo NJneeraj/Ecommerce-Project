@@ -1,17 +1,11 @@
 const CustomError = require("../helper/customError");
 
 function handleError(err, req, res, next) {
-  let error = {};
   if (err instanceof CustomError) {
     console.log(`Error Occured : ${err.message}`, { error: err });
-    error.code = err.statusCode;
-    error.message = err.message;
-    res.render("error", { error });
+    res.status(err.statusCode).json({ error: err.message });
   } else {
-    console.log(err.message);
-    error.code = 500;
-    error.message = err.message;
-    res.render("error", { error });
+    res.status(500).json({ error: "Internal server error", msg: err.message });
   }
 }
 module.exports = handleError;
